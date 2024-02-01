@@ -1,0 +1,75 @@
+.body {
+    border: 5px solid rgb(152, 152, 152);
+}
+
+.header {
+    background-color: aqua;
+}
+
+.header, .footer {
+    width: 100%;
+    height: 50px;
+}
+
+.main {
+    margin: auto;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-content {
+    background-color: greenyellow;
+    width: 70%;
+}
+
+.sidebar {
+    background-color: blueviolet;
+    width: 30%;
+}
+
+.twin {
+    background-color: orange;
+    width: 50%;
+    height: 150px;
+}
+
+.footer {
+    background-color: blue;
+}
+
+.height-m {
+    height: 250px;
+}
+
+.border-white {
+    border: 1px solid white; 
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 800px){
+    .main-content, .sidebar, .twin {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 675px){
+    .main {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .main {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .main {
+        width: 100%;
+    }
+    .main-content, .sidebar, .twin {
+        width: 100%;
+    }
+}
